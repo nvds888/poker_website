@@ -50,9 +50,18 @@ function App() {
       {renderContent()}
 
       {/* Footer */}
-      <footer className="footer">
-        <p>&copy; 2025 Poker Performance. All rights reserved.</p>
-      </footer>
+<footer className="footer">
+  <p>&copy; 2025 Poker Performance. All rights reserved.</p>
+  <a 
+    href="https://www.youtube.com/@pokerperformancecoaching" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="youtube-link"
+  >
+    Visit our YouTube Channel
+  </a>
+</footer>
+
     </div>
   )
 }
