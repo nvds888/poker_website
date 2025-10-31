@@ -592,3 +592,9 @@
     height: 180px;
   }
 }
+
+.spade {
+  color: red;
+  font-size: 2rem; /* adjust size if needed */
+  margin-right: 8px;
+}
