@@ -30,7 +30,7 @@ function App() {
       <nav className="navbar">
         <div className="nav-container">
           <div className="logo">
-            <img src="/poker-performance-logo-with-spade-symbol.jpg" alt="Poker Performance Logo" className="logo-image" />
+            <img src="/pokerlogo.jpeg" alt="Poker Performance Logo" className="logo-image" />
             <span className="logo-text">POKER PERFORMANCE</span>
           </div>
           <ul className="nav-menu">
