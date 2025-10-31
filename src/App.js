@@ -231,7 +231,7 @@ function CoachingPage() {
               <p className="cta-text">Ready to start performing like an athlete at the tables?</p>
               <button
                 className="cta-button"
-                onClick={() => window.open("https://forms.google.com/your-intake-form", "_blank")}
+                onClick={() => window.open("https://forms.gle/HwnUgQqTT4ByJtZL9", "_blank")}
               >
                 APPLY FOR COACHING
               </button>
