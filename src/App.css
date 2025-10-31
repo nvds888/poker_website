@@ -595,6 +595,25 @@
 
 .spade {
   color: red;
-  font-size: 2rem; /* adjust size if needed */
+  font-size: 6rem; /* adjust size if needed */
   margin-right: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #111;
+  color: white;
+}
+
+.footer a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
