@@ -5,8 +5,8 @@
 }
 
 .App {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -36,6 +36,13 @@
   align-items: center;
   gap: 0.75rem;
   cursor: pointer;
+}
+
+/* Added logo image styling */
+.logo-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .logo-icon {
@@ -78,7 +85,7 @@
 }
 
 .nav-menu li.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -100,14 +107,13 @@
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+  background-image: radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
@@ -223,7 +229,7 @@
 }
 
 .principle-list li::before {
-  content: '▪';
+  content: "▪";
   position: absolute;
   left: 0;
   color: #dc2626;
@@ -290,12 +296,34 @@
 /* Program Section - Coaching Page */
 .program-section {
   padding: 5rem 2rem;
-  background-color: #ffffff;
+  background-color: #f9fafb;
+}
+
+/* Added program-card styling for outlined appearance */
+.program-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 3px solid #dc2626;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(90deg, #dc2626 0%, #b91c1c 100%);
 }
 
 .program-header {
   text-align: center;
   margin-bottom: 3rem;
+  padding-top: 1rem;
 }
 
 .program-icon {
@@ -372,7 +400,7 @@
 }
 
 .include-details li::before {
-  content: '•';
+  content: "•";
   position: absolute;
   left: 0;
   color: #dc2626;
@@ -393,7 +421,7 @@
 }
 
 .results-list li::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   left: 0;
   color: #dc2626;
@@ -430,6 +458,22 @@
   font-size: 1.15rem;
   line-height: 1.9;
   color: #374151;
+}
+
+/* Added photo container and styling */
+.about-photo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.about-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #dc2626;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .about-intro {
@@ -493,11 +537,26 @@
   .include-details {
     padding-left: 1.5rem;
   }
+
+  /* Responsive adjustments for program card */
+  .program-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .about-photo {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 480px) {
   .logo-text {
     font-size: 1rem;
+  }
+
+  .logo-image {
+    width: 32px;
+    height: 32px;
   }
 
   .nav-menu {
@@ -522,5 +581,14 @@
   .program-icon,
   .about-icon {
     font-size: 3rem;
+  }
+
+  .program-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-photo {
+    width: 180px;
+    height: 180px;
   }
 }
