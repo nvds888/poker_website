@@ -29,10 +29,10 @@ function App() {
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-container">
-          <div className="logo">
-            <img src="/pokerlogo.jpeg" alt="Poker Performance Logo" className="logo-image" />
-            <span className="logo-text">POKER PERFORMANCE</span>
-          </div>
+        <div className="logo">
+      <span className="spade">♠</span>
+      <span className="logo-text">POKER PERFORMANCE</span>
+    </div>
           <ul className="nav-menu">
             <li className={activeMenu === "home" ? "active" : ""} onClick={() => handleMenuChange("home")}>
               HOME
