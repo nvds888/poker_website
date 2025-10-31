@@ -257,7 +257,7 @@ function AboutPage() {
         <div className="content-container about-container">
           <div className="about-content">
             <div className="about-photo-container">
-              <img src="/professional-headshot-photo-of-tim--poker-coach-an.jpg" alt="Tim - Poker Performance Coach" className="about-photo" />
+              <img src="/public/timfoto.jpg" alt="Tim - Poker Performance Coach" className="about-photo" />
             </div>
 
             <div className="about-intro">
